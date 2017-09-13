@@ -1,0 +1,86 @@
+<!DOTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Contato</title>
+	
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/signin.css" rel="stylesheet">
+		
+		
+	</head>
+	<body>	
+		<div class="container">							
+			<form class="form-signin">	
+				<h2>Contato</h2>
+				<!--<label>Nome:</label>-->
+				<input type="text" name="f_usuario" method="post" action="estagio.php" placeholder="Digite o seu Nome" class="form-control"><br>			
+				<!--<label for="id">Id:</label>-->
+				<input type="text" name="f_Id" placeholder="Digite o seu Id" class="form-control"><br>
+							
+				<button type="submit" class="btn btn-primary">Enviar</button>			
+				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#Modalestatico" data-whatever="@mdo">Visualizar</button>
+				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#Modaleditar" data-whatever="@mdo">Editar</button>
+							
+				<div class="modal fade bs-example-modal-lg modal-body1" id="Modalestatico" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="ModalLabel">Dados do Cliente</h4>
+							</div>											   
+							<div class="modal-body" id="Modalestatico">
+								<form>
+									<div class="form-group">
+										<label for="Nome">Nome:</label>
+										<!--<input type="Nome" class="form-control" id="Nome">-->
+									</div>
+									<div class="form-group">
+										<label for="id">Id:</label>
+										<!--<input type="id" class="form-control" id="id">-->
+									</div>
+								</form>
+							</div>					 
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+							</div>											  
+						</div>
+					</div>
+				</div>
+										
+				<div class="modal fade bs-example-modal-lg modal-body1" id="Modaleditar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="ModalLabel">Dados do Cliente</h4>
+							</div>
+							<div class="modal-body" id="Modaleditar">
+							<form>
+								<div class="form-group">
+									<label for="Nome">Nome:</label>
+									<input type="Nome" class="form-control" id="Nome">
+								</div>
+								<div class="form-group">
+									<label for="id">Id:</label>
+									<input type="id" class="form-control" id="id">
+								</div>
+							</form>
+							</div>					 
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>							
+								<button type="button" class="btn btn-primary">Enviar</button>
+								<button type="reset" class="btn btn-default">Apagar</button>
+							</div>											  
+						</div>
+					</div>
+				</div>
+			</form>	
+		</div>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>
